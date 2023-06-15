@@ -139,6 +139,7 @@ class TpCache_Plugin implements Typecho_Plugin_Interface
 		$form->addInput($element);
 
         $element = new Typecho_Widget_Helper_Form_Element_Text('auth', null, 'password', 'redis连接密码', '连接密码，没有则不填');
+		$element->setAttribute('class', 'j-setting-content j-setting-config');
         $form->addInput($element);
 
 		//$list = array('关闭', '开启');
